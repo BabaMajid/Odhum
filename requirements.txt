@@ -1,0 +1,5 @@
+openpyxl==3.0.9
+OTXv2==1.5.12
+pandas==1.4.0
+requests==2.27.1
+XlsxWriter==3.0.2
