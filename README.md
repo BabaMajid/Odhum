@@ -28,17 +28,30 @@ optional arguments:
   
   Common Usage:
   1. For hash calculation and scanning at the same time.
+     
      odhum.py -d E:\malwares -o E:\output.xlsx -m auto --algo sha256   --only support xlsx output format.
+     
      --auto mode will calculate hashes first and then check those hashes automatically.
      
   2. For Hashes calculation only, incase you want to scan later.
+
+
      odhum.py -d E:\malwares -o E:\output.xlsx -m save --algo md5   --will only calculate hashes along with file names. 
      
   3. Scan Already created files. It can only scan file in it's own format.
+  
+  
      odhum.py -f E:\malwares.xlsx -o E:\results.xlsx -m scan
      
  4. TXT file scanning, results will be saved into xlsx file provided in command line.
+
+
      odhum.py -f E:\malwares.txt -o E:\results.xlsx -m scan
+   
+   i Auto Mode will calculate and scan hashes.
+   ii save mode will only calculate hases
+   iii scan mode will read input from given file and check for reputation.
+     
      
  Further Threat Intelligence output will be added in future.
      
