@@ -9,7 +9,7 @@ import IndicatorTypes
 import configparser
 def walk_directory(args,worksheet):
     #Common file extensions that are not asociated with malwares.
-    common_files=['evtx','.pcapng','.pcap','.txt','.log','.sql','.jpg','.jpeg','.png','.xml','.mp3','.mp4','.db','.css','.lnk','.pf','.mov','.avi']
+    common_files=['.evtx','.pcapng','.pcap','.txt','.log','.sql','.jpg','.jpeg','.png','.xml','.mp3','.mp4','.db','.css','.lnk','.pf','.mov','.avi','.json','.yml']
     if os.path.isdir(args.input_path):
         row = 1
         for root,dirs,files in os.walk(args.input_path):
